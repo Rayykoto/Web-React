@@ -21,6 +21,9 @@ import Dashboard from '../pages/admin/dashboard/Index';
 //import view web Home
 import Home from "../pages/web/home/Index";
 
+//import view web categories show
+import WebCategoryShow from "../pages/web/categories/Show";
+
 function Routes() {
     return (
         <Switch>
@@ -38,6 +41,11 @@ function Routes() {
             {/* route "/" */} 
             <Route exact path="/">
                 <Home />
+            </Route>
+
+            {/* route categories */}
+            <Route exact path={"/category/:slug"}>
+                <WebCategoryShow />
             </Route>
 
         </Switch>
