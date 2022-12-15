@@ -4,6 +4,8 @@ import LayoutWeb from "../../../layouts/Web";
 
 import Slider from '../../../components/web/Slider';
 
+import Testimonial from "../../../components/testimonials/Testimonial";
+
 import Api from "../../../api";
 
 import CardCategory from "../../../components/utilities/CardCategory";
@@ -41,6 +43,8 @@ function Home() {
 
                 <Slider />
 
+                <testimonials />
+
                 <div className="container mb-5">
                     <div className="row mt-minus-87">
                         <div className="col-md-12">
@@ -72,9 +76,12 @@ function Home() {
                     </div>
                 </div>
 
+                <Testimonial />
+
                 <div className="container mt-5">
                     <h1> Content </h1>
                 </div>
+
             </LayoutWeb>
         </React.Fragment>
     );

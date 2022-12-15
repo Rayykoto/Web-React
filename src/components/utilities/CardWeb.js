@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function CardWeb(props) {
     return(
-        <div className="col-md-6 mb-4" key={props.id}>
+        <div className="col-md-4 mb-4" key={props.id}>
             <Link to={`/webs/${props.slug}`} className="text-decoration-none text-dark">
                 <div className="card border-0 rounded shadow-sm mb-3" style={{ maxWidth:"400px" }}>
                     <div className="row g-0">
@@ -19,7 +19,6 @@ function CardWeb(props) {
                                 <hr />
                                 <p className="card-text"><i className="fa fa-map-marker"></i> <i>{props.address}</i></p>
                                 <p className="card-text"><i>{props.description}</i></p>
-                                {/* <a href={`/https://www.google.co.id/maps/place/${props.latitude + "," + props.longitude}`}>Maps Directions</a> */}
                             </div>
                         </div>
                     </div>

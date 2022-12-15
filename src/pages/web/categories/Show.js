@@ -63,8 +63,6 @@ function WebCategoryShow() {
                                         images={web.images}
                                         address={web.address}
                                         description={web.description}
-                                        // latitude={web.latitude}
-                                        // longitude={web.longitude}
                                     />
                                 ))
                                 : <div className="alert alert-danger border-0 rounded shadow-sm" role="alert">
