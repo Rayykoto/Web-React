@@ -1,6 +1,6 @@
-import Image1 from "../../assets/koto/img/portfolio1.jpg";
-import Image2 from "../../assets/koto/img/portfolio2.jpg";
-import Image3 from "../../assets/koto/img/portfolio3.jpg";
+import Image1 from "../../assets/images/portfolio1.jpg";
+import Image2 from "../../assets/images/portfolio2.jpg";
+import Image3 from "../../assets/images/portfolio3.jpg";
 
 export const Data = [
     {
