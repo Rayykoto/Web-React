@@ -14,6 +14,7 @@ import Login from '../pages/admin/Login';
 //import view admin Dashboard
 import Dashboard from '../pages/admin/dashboard/Index';
 
+
 //=======================================================================
 //WEB
 //=======================================================================
@@ -23,6 +24,12 @@ import Home from "../pages/web/home/Index";
 
 //import view web categories show
 import WebCategoryShow from "../pages/web/categories/Show";
+
+//import view web places index
+import WebPlacesIndex from "../pages/web/places/Index";
+
+//import view web places show
+import WebPlacesShow from "../pages/web/places/Show";
 
 function Routes() {
     return (
@@ -47,6 +54,15 @@ function Routes() {
             <Route exact path={"/category/:slug"}>
                 <WebCategoryShow />
             </Route>
+
+            {/* route places */}
+            <Route exact path={"/places"}>
+                <WebPlacesIndex />
+            </Route>
+
+            <Route exact path={"/places/:slug"}>
+                <WebPlacesShow />
+            </Route>                 
 
         </Switch>
     )

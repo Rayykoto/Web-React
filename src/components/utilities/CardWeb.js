@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function CardWeb(props) {
     return(
         <div className="col-md-4 mb-4" key={props.id}>
-            <Link to={`/webs/${props.slug}`} className="text-decoration-none text-dark">
+            <Link to={`/places/${props.slug}`} className="text-decoration-none text-dark">
                 <div className="card border-0 rounded shadow-sm mb-3" style={{ maxWidth:"400px" }}>
                     <div className="row g-0">
                         <div className="col-md-4">
