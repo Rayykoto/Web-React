@@ -6,13 +6,19 @@ import LayoutWeb from "../../../layouts/Web";
 
 import Api from "../../../api";
 
+//import imageGallery
+import ImageGallery from "react-image-gallery";
+
+//import imageGallery CSS
+import "react-image-gallery/styles/css/image-gallery.css";
+
 function WebPlacesShow() {
 
     //state places
     const [place, setPlace] = useState({});
 
     //slug params
-    const { slug }  = useParams();
+    const { slug } = useParams();
 
     //function fetchdataplace
     const fetchDataPlace = async () => {
@@ -36,6 +42,28 @@ function WebPlacesShow() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    //react image gallery
+
+    //define image array
+    const images = [];
+
+    //function "placeImages"
+        const placeImages = () => {
+            //loop data from object "place"
+            for (let value in place.images) {
+                //push to image array
+                images.push({
+                    original: place.images[value].image,
+                    thumbnail: place.images[value].image,
+                });
+            }
+        };
+
+        useEffect(() => {
+            
+            placeImages();
+        });
+
     return(
         <React.Fragment>
             <LayoutWeb>
@@ -49,6 +77,7 @@ function WebPlacesShow() {
                                         <i className="fa fa-map-marker"> <i> {place.address}</i></i>
                                     </span>
                                     <hr />
+                                    <ImageGallery items={images} autoPlay={true} />
                                     <div dangerouslySetInnerHTML={{ __html: place.description }} 
                                     />
                                 </div>
@@ -60,11 +89,20 @@ function WebPlacesShow() {
                                     <h5>
                                         <i className="fa fa-map-marked-alt"></i> MAPS
                                     </h5>
-                                    <hr />
+                                    {/* <hr />   */}
                                 </div>
                                 <hr />
                                 <div className="card-body">
                                     <div className="row">
+                                        <div className="col-md-2 col-2">
+                                            <div className="icon-info-green">
+                                                <i className="fa fa-map-marked-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-10 col-10">
+                                            <div className="capt-info fw-bold">ADDRESS</div>
+                                            <div className="sub-title-info"> <a href={`https://maps.google.com/maps?q=${place.latitude}, ${place.longitude}`} target="blank" >Google Maps</a></div>
+                                        </div>
                                         <div className="col-md-2 col-2">
                                             <div className="icon-info-green">
                                                 <i className="fa fa-map-marker-alt"></i>
@@ -100,7 +138,7 @@ function WebPlacesShow() {
                                         <div className="col-md-10 col-10">
                                             <div className="capt-info fw-bold">WEBSITE</div>
                                             <div className="sub-title-info">
-                                                <a href={place.website} className="text-decoration-none">{place.website}</a>
+                                                <a href={`http://${place.website}`} target="blank" className="text-decoration-none">{place.website}</a>
                                             </div>
                                         </div>
                                         </div>

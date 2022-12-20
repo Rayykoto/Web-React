@@ -1,6 +1,8 @@
 //import hook react
 import React, { useState } from "react";
 
+import { ReactComponent as Logo } from '../../assets/images/koto-01.svg';
+
 //import BASE URL API
 import Api from "../../api";
 
@@ -82,9 +84,9 @@ function Login() {
         <React.Fragment>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-md-4 mt-150">
+                    <div className="col-md-4 mt-5">
                         <div className="text-center mb-4">
-                            <h4><i className="fa fa-code"></i> <strong>KOTO</strong></h4>
+                           <Logo width={'125px'} />
                         </div>
                         <div className="card border-0 rounded shadow-sm">
                             <div className="card-body">

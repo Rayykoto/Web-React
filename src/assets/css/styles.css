@@ -282,8 +282,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .image-gallery-slide .image-gallery-image {
-  height: 350px;
-  width: 100%;
+  width: 600px;
   object-fit: cover;
   border-radius: .5rem;
 }
@@ -433,6 +432,5 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 
 /* CSS KHUSUS */
-
 
 
