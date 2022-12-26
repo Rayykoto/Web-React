@@ -46,7 +46,7 @@ function WebCategoryShow() {
     return(
         <React.Fragment>
             <LayoutWeb>
-                <div className="container mt-80">
+                <div className="container mt-120">
                 <div className="row">
                         <div className="col-md-12">
                             <h4>CATEGORY : <strong className="text-uppercase">{category.name}</strong></h4>

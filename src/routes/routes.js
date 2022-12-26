@@ -31,6 +31,9 @@ import WebPlacesIndex from "../pages/web/places/Index";
 //import view web places show
 import WebPlacesShow from "../pages/web/places/Show";
 
+//import view web maps
+import WebMapsIndex from "../pages/web/maps/Index";
+
 function Routes() {
     return (
         <Switch>
@@ -60,9 +63,16 @@ function Routes() {
                 <WebPlacesIndex />
             </Route>
 
+            {/* route places show */}
             <Route exact path={"/places/:slug"}>
                 <WebPlacesShow />
-            </Route>                 
+            </Route>
+
+            {/* route maps all */}
+            <Route exact path={"/maps"}>
+                <WebMapsIndex />
+            </Route>
+
 
         </Switch>
     )

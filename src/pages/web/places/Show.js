@@ -67,7 +67,7 @@ function WebPlacesShow() {
     return(
         <React.Fragment>
             <LayoutWeb>
-                <div className="container mt-80">
+                <div className="container mt-120">
                     <div className="row">
                         <div className="col-md-7 mb-4">
                             <div className="card border-0 rounded shadow-sm">
