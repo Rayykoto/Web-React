@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import { ReactComponent as Logo } from '../../assets/images/koto-01.svg';
 
+import DarkMode from "../darkmode/Darkmode";
+
 import {
     Navbar,
     Container,
@@ -64,7 +66,8 @@ function WebHeader() {
                     <Nav>
                         <Nav.Link className="fw-bold text-white me-4"><i className="fa fa-search"></i> SEARCH</Nav.Link>
                         <Link to="/admin/login" className="btn btn-md btn-light"><i className="fa fa-lock"></i> LOGIN</Link>
-                    </Nav>
+                    </Nav>   
+                    <DarkMode />     
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -1,0 +1,79 @@
+/* body{
+    margin: 20px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    color: #333333;
+    transition: .5s;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-color: blue;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type="checkbox"]:checked:before{
+    transform: translateX(20px);
+}
+
+.dark{
+    background-color: #333333;
+    color: #fcfcfc;
+}
+ */
+
+ /* #lightMode {
+    background: transparent url("../../assets/images/sun.png") no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+ }
+ 
+ #darkMode {
+    background: transparent url("../../assets/images/bulan.png") no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+ } */
+
+ /* #darkMode:hover,
+ #darkMode:focus {
+    filter: none;
+    background-color: #120348;
+    cursor: pointer;
+ }
+
+ #darkMode.clicked {
+    filter: none !important;
+    background-color: #ffffff;
+ } */
