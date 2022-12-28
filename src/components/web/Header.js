@@ -50,7 +50,7 @@ function WebHeader() {
                     <Navbar.Brand as={Link} to="/" className="fw-bold text-white"><Logo width={"60px"}/>KOTO</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav id="custom" className="me-auto">
                     <NavDropdown title={<span><i className="fa fa-list-ul"></i> CATEGORIES</span> } id="collasible-nav-dropdown" className="fw-bold text-white">
                             {
                             categories.map((category) => (
@@ -65,9 +65,11 @@ function WebHeader() {
                     </Nav>
                     <Nav>
                         <Nav.Link className="fw-bold text-white me-4"><i className="fa fa-search"></i> SEARCH</Nav.Link>
-                        <Link to="/admin/login" className="btn btn-md btn-light"><i className="fa fa-lock"></i> LOGIN</Link>
+                        <Link to="/admin/login" className="custom btn btn-md btn-light me-4"><i className="fa fa-lock"></i> LOGIN</Link>
                     </Nav>   
-                    <DarkMode />     
+        
+                        <DarkMode />
+                   
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

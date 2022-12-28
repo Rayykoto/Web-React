@@ -4,8 +4,6 @@ import LayoutWeb from "../../../layouts/Web";
 
 import Slider from '../../../components/web/Slider';
 
-import Testimonial from "../../../components/testimonials/Testimonial";
-
 import Api from "../../../api";
 
 import CardCategory from "../../../components/utilities/CardCategory";
@@ -75,13 +73,6 @@ function Home() {
                         }
                     </div>
                 </div>
-
-                <Testimonial />
-
-                <div className="container mt-5">
-                    <h1> Content </h1>
-                </div>
-
             </LayoutWeb>
         </React.Fragment>
     );

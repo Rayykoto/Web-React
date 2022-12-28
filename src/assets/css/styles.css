@@ -4,7 +4,8 @@
 
 :root {
   --blue: rgb(18, 3, 72);
-  --white: rgb(255, 255, 255);
+  --white: rgb(228, 226, 226);
+  --black: rgb(0, 0, 0);
 }
 
 
@@ -19,15 +20,15 @@ body.light {
   --background-color: var(--white);
   --text-color: var(--blue);
   --font-weight: 400;
-  --font-color: var(--blue);
   --color: var(--blue);
   --image: url("../images/sun.png");
 }
 
 body.dark {
   --background-color: var(--blue);
-  --text-color: var(--white);
+  --text-color: var(--blue);
   --font-weight: 400;
+  --color: var(--white);
   --image: url("../images/bulan.png");
 }
 
@@ -54,6 +55,10 @@ body.dark {
  #darkMode.clicked {
     filter: none !important;
     background-color: #ffffff;
+ }
+
+ .text-white {
+    color: var(--color) !important;
  }
 
 /**
@@ -195,20 +200,18 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .btn-success {
-  color: #fff;
-  /* background-color: #116f44;
-  border-color: #116f44; */
-  background-color: #0B1120;
+  color: var(--text-color) !important;
+  background-color: #fff;
   border-color: #0B1120;
 }
 
-.btn-success:hover {
-  color: #fff;
-  /* background-color: #116f44;
-  border-color: #116f44; */
+/* .btn-success:hover {
+  color: var(--color);
+  background-color: #116f44;
+  border-color: #116f44;
   background-color: #120348;
   border-color: #120348;
-}
+} */
 
 .btn-success:active {
   color: #fff;
