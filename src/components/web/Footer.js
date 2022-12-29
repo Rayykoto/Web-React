@@ -1,7 +1,5 @@
 //import react
 import React from 'react';
-import { Container, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 function WebFooter() {
 

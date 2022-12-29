@@ -41,8 +41,6 @@ function Home() {
 
                 <Slider />
 
-                <testimonials />
-
                 <div className="container mb-5">
                     <div className="row mt-minus-87">
                         <div className="col-md-12">
