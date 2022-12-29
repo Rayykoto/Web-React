@@ -484,5 +484,24 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 
 /* CSS KHUSUS */
+.koto {
+  text-align: center;
+  color: var(--color);
+  font-weight: bold;
+  margin: 0;
+}
 
+.koto2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.koto3 {
+  color: var(--color);
+}
+
+.koto4 {
+  font-weight: bold;
+  color: var(--color);
+}
 

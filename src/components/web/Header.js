@@ -51,16 +51,15 @@ function WebHeader() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav id="custom" className="me-auto">
-                    <NavDropdown title={<span><i className="fa fa-list-ul"></i> CATEGORIES</span> } id="collasible-nav-dropdown" className="fw-bold text-white">
+                    <NavDropdown title={<span><i className="fa fa-globe-asia"></i> PLACES</span> } id="collasible-nav-dropdown" className="fw-bold text-white">
                             {
                             categories.map((category) => (
                                 <NavDropdown.Item as={Link} to={`/category/${category.slug}`} key={category.id}><img src={category.image} style={{ width: "35px" }} alt=""/> {category.name.toUpperCase()}</NavDropdown.Item>
                             ))
                             }
                         <NavDropdown.Divider />
-                        <NavDropdown.Item as={Link} to="/post/direction">LIHAT LAINNYA <i className="fa fa-long-arrow-alt-right"></i></NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/places">ALL PLACES <i className="fa fa-long-arrow-alt-right"></i></NavDropdown.Item>
                         </NavDropdown>
-                            <Nav.Link as={Link} to="/places" className="fw-bold text-white"><i className="fa fa-globe-asia"></i> PLACES</Nav.Link>
                             <Nav.Link as={Link} to="/maps" className="fw-bold text-white"><i className="fa fa-map"></i> MAPS</Nav.Link>    
                     </Nav>
                     <Nav>
