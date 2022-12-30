@@ -39,7 +39,7 @@ body.dark {
     background-size: 30px 30px;
     width: 45px;
     height: 45px;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     border: none;
     border-radius: 50%;
     transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
@@ -419,7 +419,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .footer_top {
-  padding: 120px 0px 200px;
+  padding: 120px 0px 135px;
   position: relative;
   overflow-x: hidden;
   margin-bottom: 15px;
